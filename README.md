@@ -39,7 +39,7 @@ git clone https://github.com/suportdevs/inventory_management.git
 
 ### Like this
 
-<img scr="https://devmarketer.io/wp-content/uploads/2018/02/github-clone-button.png" alt="" />
+<img src="https://devmarketer.io/wp-content/uploads/2018/02/github-clone-button.png" width="900">
 
 Once this runs, you will have a copy of the project on your computer.
 
