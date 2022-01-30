@@ -51,7 +51,11 @@ You will need to be inside that project file to enter all of the rest of the com
 
 ```
 composer install
+```
+
 or
+
+```
 composer update
 ```
 
