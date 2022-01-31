@@ -27,7 +27,7 @@
 
 <main class="content-wrapper animate__animated animate__zoomIn animate__faster">
     <div class="content mx-auto">
-        <div class="content-fluid">
+        <div class="container-fluid">
             <!-- Top Statistics -->
             <div class="row py-4">
                 <div class="col-md-12">

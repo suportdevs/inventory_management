@@ -1,7 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
-use App\Http\Controllers\ProductType;
+use App\Http\Controllers\ProductTypeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,4 +24,7 @@ Route::get('/user/edit', [HomeController::class, 'edit']);
 
 
 // Product Type Routes
-Route::resource('/product_types', ProductType::class);
+Route::resource('product_types', ProductTypeController::class);
+Route::get('/product_types', [ProductTypeController::class, 'index'])->name('product_types');
+Route::post('/product_types/store', [ProductTypeController::class, 'store'])->name('product_types.store');
+Route::post('/product_types/edit/{id}', [ProductTypeController::class, 'edit'])->name('product_types.edit');

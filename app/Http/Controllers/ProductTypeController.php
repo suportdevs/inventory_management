@@ -2,9 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ProductType;
 use Illuminate\Http\Request;
+use Illuminate\Support\Str;
 
-class ProductType extends Controller
+class ProductTypeController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +15,8 @@ class ProductType extends Controller
      */
     public function index()
     {
-        return view('components.product_types.index');
+        $product_types = ProductType::latest()->paginate(10);
+        return view('components.product_types.index', compact('product_types'));
     }
 
     /**
@@ -34,7 +37,21 @@ class ProductType extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'description' => 'required'
+        ]);
+
+        $key = Str::random(64);
+        // dd($request, $key);
+
+        $product_types['_key'] = $key;
+        $product_types['name'] = $request->name;
+        $product_types['description'] = $request->description;
+        // $product_types['created_by'] = Auth->id();
+        ProductType::create($product_types);
+        
+        return redirect()->route('product_types')->with('status', 'Product Type Inserted Successful.');
     }
 
     /**
