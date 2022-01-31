@@ -18,6 +18,9 @@ class CreateProductTypesTable extends Migration
             $table->string('_key', 32)->unique();
             $table->string('name');
             $table->text('description');
+            $table->foreignId('created_by')->nullable();
+            $table->foreignId('updated_by')->nullable();
+            $table->foreignId('deleted_by')->nullable();
             $table->timestamps();
             $table->softDeletes();
         });
