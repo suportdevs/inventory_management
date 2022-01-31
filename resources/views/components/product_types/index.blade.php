@@ -10,8 +10,7 @@
                     <div>
                         <a href="index.html" class="text-decoration-none small text-muted"><i class="fas fa-tachometer-alt"></i>
                             Dashboard / </a>
-                        <a href="" class="text-decoration-none small text-muted"><i class="fas fa-users"></i> Users / </a>
-                        <span class="text-decoration-none small text-muted">Create</span>
+                        <span class="text-decoration-none small text-muted">Product Types</span>
                     </div>
                     <div>
                         <div>
@@ -40,7 +39,7 @@
                                 <p class="small text-muted d-inline-block">User Management Database</p>
                             </div>
                             <div>
-                                <a href="{{ url('user/create') }}" class="btn btn-primary rounded-circle shadow"><i class="fas fa-plus"></i></a>
+                                <a href="{{ url('product_types/create') }}" class="btn btn-primary rounded-circle shadow"><i class="fas fa-plus"></i></a>
                             </div>
                         </div>
                         <div class="card-body" width="100%">

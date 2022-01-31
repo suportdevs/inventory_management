@@ -1,6 +1,6 @@
 <nav id="top-navbar" class="navbar navbar-expand-lg navbar-light bg-white c-shadow py-3">
     <div class="container-fluid">
-      <a class="navbar-brand" href="{{ url('user/index') }}"><img src="{{ asset('inventory_management/assets/images/logo1.png') }}" width="120px" alt=""></a>
+      <a class="navbar-brand" href="{{ url('/') }}"><img src="{{ asset('inventory_management/assets/images/logo1.png') }}" width="120px" alt=""></a>
       <div class="d-flex">
         <a id="offcanvas-btn" class="nav-link" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
           aria-controls="offcanvasRight"><i class="fas fa-cogs"></i></a> <!-- Off Canvas Button -->
@@ -12,7 +12,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul id="navbar-left" class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{ url('user/index') }}"><i class="fas fa-tachometer-alt"></i>
+            <a class="nav-link active" aria-current="page" href="{{ url('/') }}"><i class="fas fa-tachometer-alt"></i>
               Dashboard</a>
           </li>
           <li class="nav-item dropdown">
@@ -54,7 +54,7 @@
               Products
             </a>
             <div class="dropdown-menu custom-nav c-shadow" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Product Type</a>
+              <a class="dropdown-item" href="{{ url('/product_types') }}">Product Type</a>
               <a class="dropdown-item" href="#">Product Size</a>
               <a class="dropdown-item" href="#">Product Unit</a>
             </div>

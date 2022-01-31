@@ -35,7 +35,7 @@
                         <div class="card">
                             <div class="card-header bg-white d-flex align-items-center justify-content-between py-3">
                                 <div>
-                                    <h4 class="card-title fw-bold text-muted mb-0">
+                                    <h64 class="card-title fw-bold text-muted mb-0">
                                         <i class="fas fa-users"></i> Users <small class="fw-normal">Data Edit</small>
                                     </h4>
                                     <p class="small text-muted d-inline-block">User Management Database</p>

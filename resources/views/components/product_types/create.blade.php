@@ -8,9 +8,9 @@
             <div class="row mt-5 pt-3">
                 <div class="col-md-12 justify-content-between d-flex">
                     <div>
-                        <a href="index.html" class="text-decoration-none small text-muted"><i class="fas fa-tachometer-alt"></i>
+                        <a href="{{ url('/') }}" class="text-decoration-none small text-muted"><i class="fas fa-tachometer-alt"></i>
                             Dashboard / </a>
-                        <a href="" class="text-decoration-none small text-muted"><i class="fas fa-users"></i> Users / </a>
+                        <a href="{{ url('/product_types" class="text-decoration-none small text-muted"><i class="fas fa-users"></i> Product Types / </a>
                         <span class="text-decoration-none small text-muted">Create</span>
                     </div>
                     <div>
@@ -24,7 +24,6 @@
     </div>
 </div>
 
-
 <main class="content-wrapper animate__animated animate__zoomIn animate__faster">
     <div class="content mx-auto">
         <div class="container-fluid">
@@ -36,12 +35,12 @@
                             <div class="card-header bg-white d-flex align-items-center justify-content-between py-3">
                                 <div>
                                     <h4 class="card-title fw-bold text-muted mb-0">
-                                        <i class="fas fa-users"></i> Users <small class="fw-normal">Data Edit</small>
+                                        <i class="fas fa-users"></i> Product Types <small class="fw-normal">Data Create</small>
                                     </h4>
-                                    <p class="small text-muted d-inline-block">User Management Database</p>
+                                    <p class="small text-muted d-inline-block">Product Types Management Database</p>
                                 </div>
                                 <div>
-                                    <button class="btn btn-primary" onclick="history.back(-1)"><i class="fas fa-reply"></i></button>
+                                    <button class="btn btn-primary shadow" onclick="history.back(-1)"><i class="fas fa-reply"></i></button>
                                     <a href="" class="btn btn-secondary shadow"><i class="fas fa-list"></i></a>
                                 </div>
                             </div>

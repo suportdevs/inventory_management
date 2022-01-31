@@ -26,6 +26,8 @@
 
     @include('layout.navigation')
 
+    @include('layout.offcanvas')
+
     @yield('content')
 
 
